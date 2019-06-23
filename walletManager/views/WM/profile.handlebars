@@ -1,0 +1,22 @@
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+{{else}}
+{{/each}}
+
+<div class="card card-body">
+  <h3>Availble balance in your Account:-> {{Acc}}</h3>
+</div>
+<br>
+
+{{#each WM}}
+  <div class="card card-body mb-2">
+    <h4>Successfully Credited</h4>
+    <p>{{title}}</p>
+    <p>Email:{{email}}</p>
+    <p>Amount: {{Amount}}</p>
+  </div>
+
+
+{{else}}
+  <p>No Wallet listed</p>
+{{/each}}

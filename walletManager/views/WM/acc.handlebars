@@ -1,0 +1,23 @@
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+{{else}}
+{{/each}}
+
+<div class="card card-body">
+  <h3>Money Bank</h3>
+  <h5>Current Balance:->  {{acc}}</h5>
+  <form action="/WM/acc" method="post">
+
+    <div class="form-group">
+      <label for="a">Add Amount</label>
+      <input class="form-control" name="a" type="text" required>
+    </div>
+    <div class="form-group">
+
+      <label for="details">Details</label>
+      <textarea class="form-control" name="details" ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
